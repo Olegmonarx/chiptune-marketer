@@ -8,4 +8,10 @@ export default defineAgent({
       { id: "fast", value: "true" },
     ],
   },
+  hosting: {
+    // Hosted agent may only call these hosts (plus Cursor platform hosts).
+    egressDomains: ["api.heygen.com"],
+    // Declare secret names here; set values after deploy with `agent-sdk secret set`.
+    secretNames: ["HEYGEN_API_KEY", "HEYGEN_AVATAR_ID", "HEYGEN_VOICE_ID"],
+  },
 });
