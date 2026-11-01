@@ -1,0 +1,4 @@
+{
+  "name": "chiptune-marketer",
+  "install": "npm ci"
+}
